@@ -1,0 +1,97 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+body{
+  background: #000000; /* 1 tom antes do branco principal */
+  background: url(../Img/Background/BackgroundFundo.jpg)  repeat-x fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden;
+  word-wrap: break-word;
+}
+a{
+  text-decoration: none;
+}
+@font-face {
+  font-family: logo;
+  src: Url("../fonte/Angelia\ Davitson.otf");
+}.nomeNegocio{
+  font-size: 40px;
+}
+
+.pagina{
+  display: flex;
+  height: 100vh;
+}
+.conteudoPagina{
+  margin: auto;
+}
+
+.conteudoIcone{
+  display: flex;
+}
+.imagemIcone{
+  border-radius: 50%;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  box-shadow: 0px 0px 40px 2px  #00b764; /* tom princial original */
+  padding: 1px;
+  background-color: #ffffff;
+}
+
+.nomeNegocio{
+  text-align: center;
+  color: #00b764; /* tom princial original */
+  padding-top: 30px;
+}
+#nomeNegocio2{
+  padding-top: 0px;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+.subNomeNegocio{
+  color: #ffffff;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 15px;
+}
+
+.conteudoLinks{
+  display: grid;
+  margin: 5px;
+}
+.descricaoLink{
+  display: flex;
+  margin: 7px;
+}
+.link{
+  background: #00b764; /* tom secundario original */
+  color: #00361E; /* 4 tons antes do preto secundario */
+  min-width: 364px;
+  border-radius: 50px;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  font-size: 16px;
+  font-weight: bolder;
+  display: flex;
+}
+
+.link:hover{
+  color: #00b764; /* tom secundario original */
+  background: #00361E; /* 4 tons antes do preto secundario */
+  box-shadow: 0px 0px 6px 6px #00A45A; /* 1 tom mais escuro secundario */
+}
+
+.imagemLink{
+  width: 20px;
+  margin: auto 2px auto auto;
+}
+.nomeLink{
+  margin: auto auto auto 2px;
+}

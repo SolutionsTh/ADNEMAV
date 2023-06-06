@@ -17,9 +17,15 @@ a{
 }
 @font-face {
   font-family: logo;
-  src: Url("../fonte/Angelia\ Davitson.otf");
-}.nomeNegocio{
+  src: Url("../fonte/");
+}#nomeNegocio1{
   font-size: 40px;
+}
+#nomeNegocio2{
+  font-size: 24px;
+}
+.subNomeNegocio{
+  font-size: 18px;
 }
 
 .pagina{
@@ -50,21 +56,17 @@ a{
 }
 #nomeNegocio2{
   padding-top: 0px;
-  font-size: 24px;
   text-transform: uppercase;
-  margin-bottom: 5px;
 }
 .subNomeNegocio{
   color: #ffffff;
   text-align: center;
   padding-top: 5px;
-  padding-bottom: 15px;
-  font-size: 18px;
 }
 
 .conteudoLinks{
   display: grid;
-  margin: 5px;
+  padding: 10px 5px 5px 5px;
 }
 .descricaoLink{
   display: flex;

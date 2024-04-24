@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" href="../Img/Icons/logoCirculo.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="cores.css">
+
+  <title>Temporizar Exibição</title>
+</head>
+
+<body>
+
+  <h1 id="tempoRestante">Calculando...</h1>
+
+  <script>
+  // Função para calcular e exibir o tempo restante personalizado
+  function calcularTempoRestante() {
+      var agora = new Date(); // Obtém a data e hora atual
+      var diaSemana = agora.getDay(); // Obtém o dia da semana (0 = domingo, 1 = segunda, ..., 6 = sábado)
+      var horasAgora = agora.getHours(); // Obtém apenas a hora atual
+      var minutosAgora = agora.getMinutes();
+      var segundosAgora = agora.getSeconds();
+  
+      var horasRestantes;
+      var minutosRestantes;
+      var segundosRestantes;
+  
+      // Calcula o tempo restante dependendo do dia da semana
+      if (diaSemana === 0) { // Se for domingo
+        horasRestantes = 18 - horasAgora; // 19 - hora atual
+        minutosRestantes = 59 - minutosAgora; // 59 - minutos atuais
+        segundosRestantes = 60 - segundosAgora; // 60 - segundos atuais
+      } else if (diaSemana === 2 || diaSemana === 4) { // Se for terça-feira
+        var hora = 23
+        var minuto = 54
+        var segundo = 60     
+        
+        // Segundo
+        if((segundo - segundosAgora) == 60){segundosRestantes = 0} else{var segundosRestantes = segundo - segundosAgora;}
+        // Minuto
+        if(hora < horasAgora){minutosRestantes = 0; hr = 0; segundosRestantes = 0}else{if(hora <= horasAgora && minuto < minutosAgora){minutosRestantes = 0; hr = 0; segundosRestantes = 0}else{if(minuto < minutosAgora){minutosRestantes = (minuto + 60) - minutosAgora; hr = hora - 1} else{minutosRestantes = Math.max(minuto,minutosAgora) - Math.min(minuto,minutosAgora); var hr = hora}}};
+        // Hora
+        if(hr <= horasAgora){horasRestantes = 0}else{horasRestantes = hr - horasAgora};
+      }else { // Para os outros dias da semana
+          document.getElementById("tempoRestante").innerText = "Tempo Restante: Não há contagem para hoje.";
+          return;
+      }
+  
+      // Formata o tempo restante para exibição
+      var tempoFormatado = pad(horasRestantes) + ":" + pad(minutosRestantes) + ":" + pad(segundosRestantes);
+      document.getElementById("tempoRestante").innerText = "Tempo Restante: " + tempoFormatado;
+  
+      // Atualiza o tempo restante a cada segundo
+      setTimeout(calcularTempoRestante, 1000);
+  }
+  
+  // Função para adicionar um zero à esquerda quando o valor é menor que 10
+  function pad(valor) {
+      return valor < 10 ? "0" + valor : valor;
+  }
+  
+  // Inicia o cálculo do tempo restante ao carregar a página
+  window.onload = calcularTempoRestante;
+  </script>
+  
+  </body>
+  </html>

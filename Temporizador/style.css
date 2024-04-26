@@ -38,65 +38,13 @@ a{
   padding: 20px 5px;
 }
 
-.conteudoIcone{
-  display: flex;
-}
-.imagemIcone{
-  border-radius: 50%;
-  height: 150px;
-  width: 150px;
-  margin: auto;
-  box-shadow: 0px 0px 40px 2px  #00b764; /* tom princial original */
-  padding: 1px;
-  background-color: #ffffff;
-}
-
-.nomeNegocio{
+h1{
   text-align: center;
   color: #00b764; /* tom princial original */
-  padding-top: 30px;
+  font-size: 100px;
 }
-#nomeNegocio2{
-  padding-top: 0px;
-  text-transform: uppercase;
-}
-.subNomeNegocio{
+h2{
+  text-align: center;
   color: #ffffff;
-  text-align: center;
-  padding-top: 5px;
-}
-
-.conteudoLinks{
-  display: grid;
-  padding: 10px 5px 5px 5px;
-}
-.descricaoLink{
-  display: flex;
-  margin: 7px;
-}
-.link{
-  background: #00b764; /* tom secundario original */
-  color: #00361E; /* 4 tons antes do preto secundario */
-  min-width: 364px;
-  border-radius: 50px;
-  text-align: center;
-  padding: 10px;
-  margin: auto;
-  font-size: 16px;
-  font-weight: bolder;
-  display: flex;
-}
-
-.link:hover{
-  color: #00b764; /* tom secundario original */
-  background: #00361E; /* 4 tons antes do preto secundario */
-  border: solid 1px #00A45A; /* 1 tom mais escuro secundario */
-}
-
-.imagemLink{
-  width: 20px;
-  margin: auto 2px auto auto;
-}
-.nomeLink{
-  margin: auto;
+  font-size: 90px;
 }

@@ -16,8 +16,14 @@
 </head>
 
 <body>
-
-  <h1 id="tempoRestante">Calculando...</h1>
+  
+  <section class="pagina">
+    <div class="conteudoPagina">
+      <h1>Aguarde enquanto o culto não inicia!</h1>
+      <br>
+      <h2 id="tempoRestante"></h2>
+    </div>
+  </section>
 
   <script>
   // Função para calcular e exibir o tempo restante personalizado
@@ -37,9 +43,9 @@
         horasRestantes = 18 - horasAgora; // 19 - hora atual
         minutosRestantes = 59 - minutosAgora; // 59 - minutos atuais
         segundosRestantes = 60 - segundosAgora; // 60 - segundos atuais
-      } else if (diaSemana === 2 || diaSemana === 4) { // Se for terça-feira
-        var hora = 23
-        var minuto = 54
+      } else{ // Se for terça-feira
+        var hora = 19
+        var minuto = 30
         var segundo = 60     
         
         // Segundo
@@ -48,9 +54,6 @@
         if(hora < horasAgora){minutosRestantes = 0; hr = 0; segundosRestantes = 0}else{if(hora <= horasAgora && minuto < minutosAgora){minutosRestantes = 0; hr = 0; segundosRestantes = 0}else{if(minuto < minutosAgora){minutosRestantes = (minuto + 60) - minutosAgora; hr = hora - 1} else{minutosRestantes = Math.max(minuto,minutosAgora) - Math.min(minuto,minutosAgora); var hr = hora}}};
         // Hora
         if(hr <= horasAgora){horasRestantes = 0}else{horasRestantes = hr - horasAgora};
-      }else { // Para os outros dias da semana
-          document.getElementById("tempoRestante").innerText = "Tempo Restante: Não há contagem para hoje.";
-          return;
       }
   
       // Formata o tempo restante para exibição

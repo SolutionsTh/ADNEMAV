@@ -58,7 +58,7 @@
   
       // Formata o tempo restante para exibição
       var tempoFormatado = pad(horasRestantes) + ":" + pad(minutosRestantes) + ":" + pad(segundosRestantes);
-      document.getElementById("tempoRestante").innerText = "Tempo Restante: " + tempoFormatado;
+      document.getElementById("tempoRestante").innerText = tempoFormatado;
   
       // Atualiza o tempo restante a cada segundo
       setTimeout(calcularTempoRestante, 1000);

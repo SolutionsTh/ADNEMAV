@@ -20,7 +20,6 @@
   <section class="pagina">
     <div class="conteudoPagina">
       <h1>O culto começará em instantes.</h1>
-      <br>
       <h2 id="tempoRestante"></h2>
     </div>
   </section>
@@ -33,27 +32,30 @@
       var horasAgora = agora.getHours(); // Obtém apenas a hora atual
       var minutosAgora = agora.getMinutes();
       var segundosAgora = agora.getSeconds();
+      var dia = agora.getDate();
   
       var horasRestantes;
       var minutosRestantes;
       var segundosRestantes;
   
       // Calcula o tempo restante dependendo do dia da semana
-      if (diaSemana === 0) { // Se for domingo
-        horasRestantes = 18 - horasAgora; // 19 - hora atual
-        minutosRestantes = 59 - minutosAgora; // 59 - minutos atuais
-        segundosRestantes = 60 - segundosAgora; // 60 - segundos atuais
-      } else{ // Se for terça-feira
-        var hora = 19
-        var minuto = 30
-        var segundo = 60     
-        
-        // Segundo
-        if((segundo - segundosAgora) == 60){segundosRestantes = 0} else{var segundosRestantes = segundo - segundosAgora;}
-        // Minuto
-        if(hora < horasAgora){minutosRestantes = 0; hr = 0; segundosRestantes = 0}else{if(hora <= horasAgora && minuto < minutosAgora){minutosRestantes = 0; hr = 0; segundosRestantes = 0}else{if(minuto < minutosAgora){minutosRestantes = (minuto + 60) - minutosAgora; hr = hora - 1} else{minutosRestantes = Math.max(minuto,minutosAgora) - Math.min(minuto,minutosAgora); var hr = hora}}};
-        // Hora
-        if(hr <= horasAgora){horasRestantes = 0}else{horasRestantes = hr - horasAgora};
+      if(dia === dia){
+        if (diaSemana === 0) { // Se for domingo
+          horasRestantes = 18 - horasAgora; // 19 - hora atual
+          minutosRestantes = 59 - minutosAgora; // 59 - minutos atuais
+          segundosRestantes = 60 - segundosAgora; // 60 - segundos atuais
+        } else{ // Se for terça-feira
+          var hora = 19
+          var minuto = 30
+          var segundo = 60     
+          
+          // Segundo
+          if((segundo - segundosAgora) == 60){segundosRestantes = 0} else{var segundosRestantes = segundo - segundosAgora;}
+          // Minuto
+          if(hora < horasAgora){minutosRestantes = 0; hr = 0; segundosRestantes = 0}else{if(hora <= horasAgora && minuto < minutosAgora){minutosRestantes = 0; hr = 0; segundosRestantes = 0}else{if(minuto < minutosAgora){minutosRestantes = (minuto + 60) - minutosAgora; hr = hora - 1} else{minutosRestantes = Math.max(minuto,minutosAgora) - Math.min(minuto,minutosAgora); var hr = hora}}};
+          // Hora
+          if(hr <= horasAgora){horasRestantes = 0}else{horasRestantes = hr - horasAgora};
+        }
       }
   
       // Formata o tempo restante para exibição

@@ -47,7 +47,7 @@ h1{
 }
 @font-face {
   font-family: Led_Slep;
-  src: Url("../../../Fontes/LCD_Mono/LCD-L___.TTF");
+  src: Url("../../Fontes/LCD_Mono/LCD-L___.TTF");
 }h2{
   text-align: center;
   color: #ffffff;

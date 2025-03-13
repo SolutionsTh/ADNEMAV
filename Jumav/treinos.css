@@ -1,0 +1,76 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    background-color: black;
+    background-image: url(img/iconeHalter1.1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+
+
+.topo{
+    background-color: #17673ec8;
+    display: inline-flex;
+    width: 100%;
+    padding: 8px 0px;
+    border-bottom: #57a77eaa 1px solid;
+    position: fixed;
+    height: 45px;
+}
+img{
+    margin: auto 10px;
+    width: 30px;
+}
+h1{
+    padding: 0px 5px;
+    margin: auto 0px auto 9px;
+}
+
+
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 0px;    
+}
+.treino{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 15px auto;
+}
+
+a{
+    text-decoration: none;
+    /* color: #006400; */
+    color: #000000;
+    background-color: #17673ee4;
+    border: #57a77eaa 1px solid;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 21px;
+    padding: 5px 30px;
+}
+#treinoAerobico{
+    margin: 50px auto;
+}
+
+
+
+.renovacao{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: right;
+    color: #686868;
+    font-weight: bolder;
+}

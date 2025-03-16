@@ -1,0 +1,87 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-family: "Ascender Sans W01 Regular";
+}
+body{
+    background-color:rgb(28, 28, 28);
+    background-image: url(../Img/Background/backgroundFoto_P&B.png);
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+}
+
+
+.topo{
+    background-color: #A0A0A0;
+    border-bottom: #545454 1px solid;
+    display: inline-flex;
+    width: 100%;
+    padding: 8px 0px;
+    position: fixed;
+    height: 45px;
+}
+img{
+    margin: auto 10px;
+    width: 30px;
+}
+h1{
+    padding: 0px 5px;
+    margin: auto 0px auto 9px;
+}
+
+
+
+.conteudo{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 45px 0px;    
+}
+.conteudoAniversariante{
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 15px auto;
+    width: 250px;
+    background-color: #ffffffb3;
+    padding: 10px;
+    border-radius: 15px;
+}
+.nomeMes{
+    padding: 20px 0 5px 0;
+}
+.nomeMes:first-child {
+    padding-top: 0px;
+}
+
+.descricaoAniversario{
+    display: grid;
+    grid-template-columns: 20px auto;
+    padding: 5px 0;
+}
+.dataAniversario{
+    color: #545454;
+}
+.nomeAniversario{
+    text-align: left;
+    margin-left: 5px;
+}
+
+
+
+@import url(https://db.onlinewebfonts.com/c/0811affbbfd6cb65b2fc0ce8717ca846?family=Ascender+Sans+W01+Regular);
+@font-face {
+    font-family: "Ascender Sans W01 Regular";
+    src: url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.eot");
+    src: url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/0811affbbfd6cb65b2fc0ce8717ca846.svg#Ascender Sans W01 Regular")format("svg");
+}

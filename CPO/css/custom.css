@@ -1442,25 +1442,25 @@ th {
 
 /*COLUNA BOX TRIPLO*/
 
-.destaque.white.col-box-triplo .bx-content img{
+.destaque.white.col-box .bx-content img{
 	max-height: 300px;
 }
-.destaque.white.col-box-triplo .bx-content{
+.destaque.white.col-box .bx-content{
 	flex-direction: column;
 }
-.destaque.white.col-box-triplo .bx-content{
+.destaque.white.col-box .bx-content{
     display: flex;
     flex-direction: column;
 }
-.destaque.white.col-box-triplo .col.texto{
+.destaque.white.col-box .col.texto{
     max-width: 80%;
     margin: auto;
 }
-.destaque.white.col-box-triplo .col.texto .content-title-numero{
+.destaque.white.col-box .col.texto .content-title-numero{
     display: flex;
     margin-bottom: 40px;
 }
-.destaque.white.col-box-triplo .col.texto .content-title-numero .title-numero{
+.destaque.white.col-box .col.texto .content-title-numero .title-numero{
     margin: auto;
     border: 2px solid #4CAF50;
     border-radius: 50px;
@@ -1469,40 +1469,43 @@ th {
     padding: 20px;
     transition: all 0.3s ease;
 }
-.destaque.white.col-box-triplo .col.texto:hover .content-title-numero .title-numero {
-  background-color: #4CAF50;
-  color: #ffffff;
+.destaque.white.col-box .col.texto:hover .content-title-numero .title-numero {
+    background-color: #4CAF50;
+    color: #ffffff;
 }
-.destaque.white.col-box-triplo .col.texto .content-title-numero .title-numero div{
+.destaque.white.col-box .col.texto .content-title-numero .title-numero div{
     text-align: center;
     font-weight: 400;
     font-family: "Poppins", sans-serif, arial !important;
     font-size: 30px;
 }
-.destaque.white.col-box-triplo .col.texto h4{
+.destaque.white.col-box .col.texto h4{
     text-align: center;
     font-size: 21px;
     font-weight: 600;
 }
+.destaque.white.col-box .col.texto .title-numero, .destaque.white.col-box .col.texto h4, .destaque.white.col-box .col.texto p, .destaque.white.col-box .col.texto li{
+    color: #ffffff;
+}
 
 /*COLUNA BOX TRIPLO COM IMAGEM*/
-.destaque.white.col-box-triplo-imagem .bx-content img{
+.destaque.white.col-box-imagem .bx-content img{
 	max-height: 300px;
 }
-.destaque.white.col-box-triplo-imagem .bx-content{
+.destaque.white.col-box-imagem .bx-content{
 	flex-direction: column;
 }
-.destaque.white.col-box-triplo-imagem .bx-content{
+.destaque.white.col-box-imagem .bx-content{
     display: flex;
     flex-direction: column;
 }
-.destaque.white.col-box-triplo-imagem .col.texto{
+.destaque.white.col-box-imagem .col.texto{
     max-width: 95%;
     margin: auto;
 }
 
 /*CITAÇÃO*/
-.row.destaque:not(.citacao) .col-box-triplo-imagem > .col:not(:first-child):not(.texto):not(.imagem) {
+.row.destaque:not(.citacao) .col-box-imagem > .col:not(:first-child):not(.texto):not(.imagem) {
 	display: flex;
 }
 .row.destaque.citacao .col .txt-small:last-child{
@@ -2215,4 +2218,44 @@ ul:not(.browser-default)>li {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+
+/* GrÃ¡fico Steps */
+.grafico-steps-box{
+	margin: 0;
+}
+.grafico-steps-box .grafico-steps{
+	display: grid;
+}
+.grafico-steps-box .grafico-steps:last-child{
+	margin-bottom: 0;
+}
+.grafico-steps-box .grafico-steps:first-child{
+	margin-top: 0;
+}
+.grafico-steps-box-1 .grafico-steps,.grafico-steps-box-5 .grafico-steps{
+	grid-template-columns: 1fr minmax(auto, 100%);
+	margin: 1rem 0.4rem;
+}
+.grafico-steps-box-2 .grafico-steps,.grafico-steps-box-4 .grafico-steps,.grafico-steps-box-6 .grafico-steps{
+	grid-template-columns: 1fr;
+	margin: 1rem 0.4rem;
+}
+
+
+.grafico-steps-box.grafico-steps-box-1 .title-grafico-steps{
+    font-weight: 800;
+    font-size: 120px;
+    color: #4CAF50;
+    text-align: center;
+    min-width: 80px;
+    background-color: #880E4F;
+}
+
+.grafico-steps-box.grafico-steps-box-1 .texto-grafico-steps{
+    background-color: #000000;
+    border-radius: 30px 0px;
+    padding: 15px;
 }

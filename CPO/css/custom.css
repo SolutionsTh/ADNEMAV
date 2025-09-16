@@ -2141,7 +2141,7 @@ ul:not(.browser-default)>li {
     left: 50%;
     transform: translate(-50%, -58%);
     font-size: 20rem !important;
-    color: rgba(255,255,255,0.1);
+    color: #3d3d3db5;
     z-index: 1;
     pointer-events: none;
 }
@@ -2319,8 +2319,6 @@ ul:not(.browser-default)>li {
 } 
 .row.destaque.conclusao .col .content-icon-conclusao{
 	min-width: 70px;
-    /* margin-right: 15px; */
-    /* background-color: red; */
 }
 .row.destaque.conclusao .col .legenda-conclusao{
     margin-top: 24px;
@@ -2353,6 +2351,7 @@ ul:not(.browser-default)>li {
     margin-bottom: 0;
 }
 
+
 /*GRÁFICOS STEPS*/
 .grafico-steps-box{
 	margin: 0;
@@ -2368,11 +2367,11 @@ ul:not(.browser-default)>li {
 }
 .grafico-steps-box-1 .grafico-steps{
 	grid-template-columns: 1fr minmax(auto, 100%);
-	margin: 1rem 0.4rem;
+	margin: 15px 0;
 }
 .grafico-steps-box-2 .grafico-steps{
 	grid-template-columns: 1fr;
-	margin: 1rem 0.4rem;
+	margin: 15px 0;
 }
 
 /*GRÁFICOS STEPS 1*/
@@ -2380,7 +2379,7 @@ ul:not(.browser-default)>li {
     font-weight: 800;
     font-size: 90px;
     color: #4CAF50;
-    text-align: center;
+    text-align: left;
     min-width: 80px;
     margin: auto;
     height: auto;
@@ -2401,6 +2400,9 @@ ul:not(.browser-default)>li {
 }
 .grafico-steps-box.grafico-steps-box-1 .grafico-steps:hover .text-grafico-steps-wrapper{
     border: #4CAF50 3px solid;
+}
+.grafico-steps-box.grafico-steps-box-1 .grafico-steps:hover .title-grafico-steps{
+    text-shadow: 0px 0px 2px #000000;
 }
 
 /*GRÁFICOS STEPS 2*/

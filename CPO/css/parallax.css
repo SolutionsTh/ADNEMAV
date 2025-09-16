@@ -98,10 +98,10 @@ section.module.parallax{
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-size: cover !important;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
 }
 
 section.module.parallax:after{

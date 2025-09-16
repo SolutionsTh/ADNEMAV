@@ -29,8 +29,8 @@ nav {
     color: #ffffff;
     text-align: center;
     font-size: 19px;
-    font-weight: 700;
-    padding: 0 15px;
+    font-weight: 600;
+    padding: 0 10px;
 }
 .sidenav-trigger{
 	color: #C7C7C7;	
@@ -49,7 +49,6 @@ nav {
 }
 .sidenav a span{
     color: #ffffff;
-    font-weight: 600;
 }
 .sidenav a[href*="-"] span{
     color: #7f7f7f;
@@ -98,6 +97,7 @@ nav {
 .nav-fab a, .nav-fab a:hover{
     text-decoration: none !important;
     display: flex;
+    justify-content: center;
 }
 
 

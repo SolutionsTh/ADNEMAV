@@ -2223,7 +2223,7 @@ ul:not(.browser-default)>li {
     border-bottom: 1px solid #ddd;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    padding: 10px 15px;
+    padding: 10px;
     margin: 0;
 }
 
@@ -2377,7 +2377,7 @@ ul:not(.browser-default)>li {
 /*GRÁFICOS STEPS 1*/
 .grafico-steps-box.grafico-steps-box-1 .title-grafico-steps{
     font-weight: 800;
-    font-size: 85px;
+    font-size: 90px;
     color: #4CAF50;
     text-align: left;
     min-width: 80px;

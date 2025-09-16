@@ -2401,9 +2401,6 @@ ul:not(.browser-default)>li {
 .grafico-steps-box.grafico-steps-box-1 .grafico-steps:hover .text-grafico-steps-wrapper{
     border: #4CAF50 3px solid;
 }
-.grafico-steps-box.grafico-steps-box-1 .grafico-steps:hover .title-grafico-steps{
-    text-shadow: 0px 0px 2px #000000;
-}
 
 /*GRÁFICOS STEPS 2*/
 .grafico-steps-box.grafico-steps-box-2 .content-title-grafico-steps{
